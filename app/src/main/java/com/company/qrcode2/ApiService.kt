@@ -9,7 +9,7 @@ interface ApiService {
     @FormUrlEncoded
     @POST("QR/register")
     fun postRegister(
-        @Field("nim") id: String,
+        @Field("nim") nim: String,
         @Field("nama") nama: String,
         @Field("prodi") prodi: String,
         @Field("email") email: String,
@@ -18,14 +18,14 @@ interface ApiService {
 
     @GET("QR/login")
     fun getLogin(
-        @Query("nim") id: String,
+        @Query("nim") nim: String,
         @Query("password") password: String
     ): Call<Response>
 
     @FormUrlEncoded
     @POST("QR/token")
     fun postScan(
-        @Field("nim") id: String,
+        @Field("nim") nim: String,
         @Field("token") token: String
     ): Call<Response>
 }

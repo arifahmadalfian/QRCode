@@ -16,6 +16,7 @@
         android:usesCleartextTraffic="true"> <!-- for request http://  -->
         <activity android:name=".Login"></activity>
         <activity android:name=".Register" />
+        <activity android:name=".ScanViewActivity" />
         <activity android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
